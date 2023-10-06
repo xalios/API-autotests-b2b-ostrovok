@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "null"
+    },
+    "debug": {
+      "type": "object",
+      "properties": {
+        "request": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            },
+            "Language": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query",
+            "Language"
+          ]
+        },
+        "key_id": {
+          "type": "integer"
+        },
+        "validation_error": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "request",
+        "key_id",
+        "validation_error"
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "debug",
+    "status",
+    "error"
+  ]
+}

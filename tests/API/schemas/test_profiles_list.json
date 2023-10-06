@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "users": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "first_name": {
+                  "type": ["string", "null"]
+                },
+                "last_name": {
+                  "type": ["string", "null"]
+                },
+                "middle_name": {
+                  "type": ["string", "null"]
+                },
+                "phone": {
+                  "type": ["string", "null"]
+                },
+                "status": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "first_name",
+                "last_name",
+                "middle_name",
+                "phone",
+                "status",
+                "type"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "users"
+      ]
+    },
+    "debug": {
+      "type": ["string", "null"]
+    },
+    "error": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "debug",
+    "error",
+    "status"
+  ]
+}

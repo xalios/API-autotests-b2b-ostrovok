@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "null"
+    },
+    "debug": {
+      "type": "object",
+      "properties": {
+        "real_ip": {
+          "type": "string"
+        },
+        "request_id": {
+          "type": "string"
+        },
+        "utcnow": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "real_ip",
+        "request_id",
+        "utcnow"
+      ]
+    },
+    "error": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "debug",
+    "error",
+    "status"
+  ]
+}
